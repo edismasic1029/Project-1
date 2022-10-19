@@ -1,0 +1,68 @@
+html {
+  font-family: 'Lucida Console', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 20px;
+  
+}
+body {
+   background-image: url("https://cdnb.artstation.com/p/assets/images/images/019/170/273/large/ford-nguyen-city-street.jpg?1562315890");
+   text-align: center;
+   color: PeachPuff; 
+   
+}
+
+
+
+label {
+		text-align: center;
+		display: block;
+        padding-left: 35px;
+        text-indent: 15px;
+		
+      }
+      input {
+        
+        height: 35px;
+        width: 15%;
+		padding:  0;
+        margin: 5px;
+        vertical-align: bottom;
+        position: relative;
+        top: 0px;
+      }
+
+
+button {
+ height: 35px;
+ width: 35%;
+ display: block;
+ margin: 0 auto;
+ font-size: 25px;
+}
+
+@media screen and (min-width: 510px) {
+ #container {
+  text-align: center;
+  margin: 3% auto 0 auto;
+  width: 65%;
+ }
+
+
+@media screen and (min-width: 600px){
+ #container {
+  clear: right;
+  margin: 3% auto 0 auto;
+  width: 50%;
+ }
+
+
+@media screen and (min-width: 940px) {
+ #container {
+  margin: 3%;
+  width: 40%;
+ }
+
+
+
+}
