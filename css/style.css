@@ -12,7 +12,12 @@ body {
    
 }
 
-
+#anime{
+      width:100px;
+      height:100px;
+      
+	  float: center;
+  }
 
 label {
 		text-align: center;
