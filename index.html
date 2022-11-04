@@ -1,76 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" class="nojs">
-
-<head>
-    <title>HTML Form Elements</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
-    <link rel="stylesheet" media="screen" href="css/style.css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/site.js"></script>
-
-<script>
-function validateForm() {
-  let x = document.forms["form"]["name"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
-</script>
-
-</head>
-<body>
-  <div class="information">
-</div>
-    <form name="form" action="#null" onsubmit="return validateForm()" method="post">
-      <p>Enter your favorite animes!</p>
-      <div class="nameInput">
-        <label>
-          <input type="text" id="nameInput" name="name" placeholder=" Your Name"><br>
-        </label>
-      </div>
-      <div class="nameInput">
-        <label>
-          <input type="text" id="animeInput" name="anime" placeholder="Anime"><br>
-        </label>
-      </div>
-      <div class="">
-        <label>
-          <input type="text" id="reasonInput" name="reason" placeholder="Why'd you start?"><br>
-        </label>
-      </div>
-	
-	 <img id="anime" src="css/media/anime.gif" alt="GIF">
-	  
-	 <div class="container">
-
-  <h1>The superior anime!!</h1>
- 
- <label for="animes">Select Anime:</label>
-
-<select id="animes">
-  <option value="0">Select The Superior Anime:</option>
-    <option value="1">Naruto</option>
-    <option value="2">DragonBall</option>
-    <option value="3">One Piece</option>
-    <option value="4">Death Note</option>
-    <option value="5">Demon Slayer</option>
-    <option value="6">Attack On Titan</option>
-    <option value="7">JJK</option>
-    <option value="8">Full Metal Alchemist</option>
-    <option value="9">Other</option>
-</select>
- </div>
-
-<div>
-        <button type="submit">One Step Closer to Becoming Hokage!</button>
-    
-  </div>
-  </form>
-</body>
-
+   <head>
+      <title>HTML Form Elements</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+      <link rel="stylesheet" media="screen" href="css/style.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/site.js"></script>
+      <script>
+         function validateForm() {
+           let x = document.forms["form"]["name"].value;
+           if (x == "") {
+             alert("Name must be filled out");
+             return false;
+           }
+         }
+      </script>
+   </head>
+   <body>
+      <div class="information"></div>
+      <form name="form" action="#null" onsubmit="return validateForm()" method="post">
+         <p>Enter your favorite animes!</p>
+         <div class="nameInput">
+            <label>
+            <input type="text" id="nameInput" name="name" placeholder=" Your Name"><br>
+            </label>
+         </div>
+         <div class="nameInput">
+            <label>
+            <input type="text" id="animeInput" name="anime" placeholder="Anime"><br>
+            </label>
+         </div>
+         <div class="">
+            <label>
+            <input type="text" id="reasonInput" name="reason" placeholder="Why'd you start?"><br>
+            </label>
+         </div>
+         <img id="anime" src="css/media/anime.gif" alt="GIF">
+         <div class="container">
+            <h1>The superior anime!!</h1>
+            <label for="animes">Select Anime:</label>
+            <select id="animes">
+               <option value="0">Select The Superior Anime:</option>
+               <option value="1">Naruto</option>
+               <option value="2">DragonBall</option>
+               <option value="3">One Piece</option>
+               <option value="4">Death Note</option>
+               <option value="5">Demon Slayer</option>
+               <option value="6">Attack On Titan</option>
+               <option value="7">JJK</option>
+               <option value="8">Full Metal Alchemist</option>
+               <option value="9">Other</option>
+            </select>
+         </div>
+         <div>
+            <button type="submit">One Step Closer to Becoming Hokage!</button>
+         </div>
+      </form>
+   </body>
 </html>
