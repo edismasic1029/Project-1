@@ -14,7 +14,7 @@
 </head>
 <body>
   <div class="information">
-    <form method="get" action="#null" autocomplete="on">
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
       <p>Enter your favorite animes!</p>
       <div class="nameInput">
         <label>
@@ -31,7 +31,7 @@
           <input type="text" id="reasonInput" name="reason" placeholder="Why'd you start?"><br>
         </label>
       </div>
-	 </form>
+	
 	 </div>
 	 <img id="anime" src="css/media/anime.gif" alt="GIF">
 	  
@@ -54,10 +54,10 @@
 </select>
  
 <div>
-        <button type="submit">Submit</button>
+        <input type="submit" value="Submit">
     
   </div>
-  
+   </form>
 </body>
 
 </html>
