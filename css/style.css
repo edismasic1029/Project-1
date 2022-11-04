@@ -1,6 +1,6 @@
 html {
   font-family: "Gemunu Libre", "Courier New";
-  font-size: 1.935rem;
+  font-size: 1.435rem;
   line-height: 25px;
   padding: 10px;
   
@@ -48,6 +48,7 @@ select {
 
 
 
+
 button {
  height: 35px;
  width: 35%;
@@ -63,13 +64,13 @@ button {
   width: 90%;
  }
 }
-
-@media screen and (min-width: 600px){
- #container {
+@media (min-height: 680px), screen and (orientation: portrait) {
+  /* … */
+  #container {
   clear: right;
   margin: 3% auto 0 auto;
   width: 90%;
- }
+	}
 }
 
 @media screen and (min-width: 940px) {
