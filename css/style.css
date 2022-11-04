@@ -2,7 +2,8 @@ html {
   font-family: "Gemunu Libre", "Courier New", monospace;
   font-size: 30px;
   line-height: 25px;
-  padding: 20px;
+  padding: 10px;
+  
   
 }
 body {
@@ -20,22 +21,31 @@ body {
   }
 
 label {
-		text-align: center;
+		
 		display: block;
-        padding-left: 35px;
-        text-indent: 15px;
+        padding-left: 15px;
+        text-indent: -15px;
+       
 		
       }
-      input {
+ input {
         
         height: 35px;
         width: 15%;
 		padding:  0;
         margin: 5px;
-        vertical-align: bottom;
+        vertical-align: middle;
         position: relative;
         top: 0px;
+		
       }
+
+select {
+	height: 35px;
+        width: 15%;
+	
+}
+
 
 
 button {
