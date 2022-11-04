@@ -11,10 +11,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/site.js"></script>
+
+<script>
+function validateForm() {
+  let x = document.forms["form"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
 </head>
 <body>
   <div class="information">
-    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+</div>
+    <form name="form" action="#null" onsubmit="return validateForm()" method="post">
       <p>Enter your favorite animes!</p>
       <div class="nameInput">
         <label>
@@ -32,11 +44,10 @@
         </label>
       </div>
 	
-	 </div>
 	 <img id="anime" src="css/media/anime.gif" alt="GIF">
 	  
 	 <div class="container">
-  <h2>The superior anime!!</h2>
+  <h1>The superior anime!!</h1>
  
  <label for="animes">Select Anime:</label>
 
@@ -52,12 +63,13 @@
     <option value="8">Full Metal Alchemist</option>
     <option value="9">Other</option>
 </select>
- 
+ </div>
+
 <div>
-        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
     
   </div>
-   </form>
+  </form>
 </body>
 
 </html>
